@@ -134,7 +134,7 @@ const AppHeader = () => {
             <button
               onClick={showHireMeModal}
               onKeyDown={showHireMeModal}
-              className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
+              className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
               aria-label="Hire Me Button"
               tabIndex={0}
             >
