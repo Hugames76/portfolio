@@ -165,54 +165,54 @@ const ProjectsGrid = () => {
               );
             })
           : searchProject
-          ? searchProjectsByTitle.map((project) => {
-              const projectData = projectsData.find((data) => data.title === project.title);
+            ? searchProjectsByTitle.map((project) => {
+                const projectData = projectsData.find((data) => data.title === project.title);
 
-              if (!projectData) {
-                return null;
-              }
+                if (!projectData) {
+                  return null;
+                }
 
-              return (
-                <WhitelistingSingleProject
-                  title={
-                    language === "en"
-                      ? englishTranslations[projectData.title]
-                      : frenchTranslations[projectData.title]
-                  }
-                  category={
-                    language === "en"
-                      ? englishTranslations[projectData.category]
-                      : frenchTranslations[projectData.category]
-                  }
-                  image={projectData.img}
-                  key={projectData.id}
-                />
-              );
-            })
-          : projects.map((project) => {
-              const projectData = projectsData.find((data) => data.title === project.title);
+                return (
+                  <WhitelistingSingleProject
+                    title={
+                      language === "en"
+                        ? englishTranslations[projectData.title]
+                        : frenchTranslations[projectData.title]
+                    }
+                    category={
+                      language === "en"
+                        ? englishTranslations[projectData.category]
+                        : frenchTranslations[projectData.category]
+                    }
+                    image={projectData.img}
+                    key={projectData.id}
+                  />
+                );
+              })
+            : projects.map((project) => {
+                const projectData = projectsData.find((data) => data.title === project.title);
 
-              if (!projectData) {
-                return null;
-              }
+                if (!projectData) {
+                  return null;
+                }
 
-              return (
-                <WhitelistingSingleProject
-                  title={
-                    language === "en"
-                      ? englishTranslations[projectData.title]
-                      : frenchTranslations[projectData.title]
-                  }
-                  category={
-                    language === "en"
-                      ? englishTranslations[projectData.category]
-                      : frenchTranslations[projectData.category]
-                  }
-                  image={projectData.img}
-                  key={projectData.id}
-                />
-              );
-            })}
+                return (
+                  <WhitelistingSingleProject
+                    title={
+                      language === "en"
+                        ? englishTranslations[projectData.title]
+                        : frenchTranslations[projectData.title]
+                    }
+                    category={
+                      language === "en"
+                        ? englishTranslations[projectData.category]
+                        : frenchTranslations[projectData.category]
+                    }
+                    image={projectData.img}
+                    key={projectData.id}
+                  />
+                );
+              })}
       </div>
     </section>
   );

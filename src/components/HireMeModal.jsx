@@ -175,8 +175,8 @@ const HireMeModal = ({ onClose }) => {
                         emailSent
                           ? "bg-green-500 hover:bg-green-600"
                           : emailError
-                          ? "bg-red-500 hover:bg-red-600"
-                          : "bg-indigo-500 hover:bg-indigo-600"
+                            ? "bg-red-500 hover:bg-red-600"
+                            : "bg-indigo-500 hover:bg-indigo-600"
                       }`}
                     aria-label="Submit Request"
                   >
