@@ -1,10 +1,11 @@
-/**
- * Entry point of application, where App is rendered within the div with the id of "app" 
- */
-
 import React from "react";
-import { render } from "react-dom";
-
+import "./css/main.css";
 import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-render(<App></App>, document.getElementById("app"));
+import { createRoot } from "react-dom/client";
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
+
+reportWebVitals();

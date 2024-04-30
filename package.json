@@ -1,19 +1,19 @@
 {
-  "name": "educator-js-codespace-template",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "A portfolio website for showcasing your projects",
   "source": "src/index.html",
-  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
+  "homepage": "https://hugames76.github.io/portfolio",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "yarn run react-scripts build",
+    "build-gh": "yarn build --public-url 'https://hugames76.github.io/portfolio'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/Hugames76/portfolio.git"
   },
   "author": "Microsoft",
   "license": "ISC",
@@ -21,19 +21,38 @@
     "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.5",
+    "@testing-library/user-event": "^14.5.2",
+    "framer-motion": "11.1.7",
+    "postcss-cli": "^11.0.0",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.1.0",
+    "react-image-gallery": "^1.3.0",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.9.0",
+    "serve": "^14.2.3",
+    "styled-components": "^6.1.8",
+    "web-vitals": "^3.5.2"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.7",
-    "gh-pages": "^4.0.0",
-    "html-webpack-plugin": "^5.5.0",
-    "parcel": "^2.7.0",
-    "prettier": "^2.7.1",
-    "process": "^0.11.10"
+    "@tailwindcss/forms": "^0.5.7",
+    "@testing-library/dom": "^10.1.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "gh-pages": "^6.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.3"
   }
 }
