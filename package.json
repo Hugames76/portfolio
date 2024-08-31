@@ -9,7 +9,7 @@
     "build": "yarn run react-scripts build",
     "build-gh": "yarn build --public-url 'https://hugames76.github.io/portfolio'",
     "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
