@@ -12,7 +12,7 @@ function AppFooterCopyright() {
           GitHub Repository
         </a>
         <a
-          href="https://hugoportfolio.xyz/"
+          href="https://hugames76.github.io/"
           target="__blank"
           className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
         >

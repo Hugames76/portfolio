@@ -10,7 +10,7 @@ const socialLinks = [
   {
     id: 1,
     icon: <FiGlobe />,
-    url: "https://hugoportfolio.xyz/",
+    url: "https://hugames76.github.io/",
   },
   {
     id: 2,

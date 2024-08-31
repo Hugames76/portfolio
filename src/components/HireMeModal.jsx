@@ -1,16 +1,11 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { FiX } from "react-icons/fi";
 import Button from "./reusable/Button";
-import { useContext, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import PropTypes from "prop-types";
 const englishTranslations = require("../en.json");
 const frenchTranslations = require("../fr.json");
-
-HireMeModal.propTypes = {
-  onClose: PropTypes.func.isRequired,
-};
 
 const HireMeModal = ({ onClose }) => {
   const { language } = useContext(LanguageContext);
@@ -165,19 +160,19 @@ const HireMeModal = ({ onClose }) => {
                   <span
                     type="submit"
                     className={`px-4
-											sm:px-6
-											py-2
-											text-white
-											rounded-md
-											focus:ring-1
-											duration-500
-											${
-                        emailSent
-                          ? "bg-green-500 hover:bg-green-600"
-                          : emailError
-                            ? "bg-red-500 hover:bg-red-600"
-                            : "bg-indigo-500 hover:bg-indigo-600"
-                      }`}
+                                            sm:px-6
+                                            py-2
+                                            text-white
+                                            rounded-md
+                                            focus:ring-1
+                                            duration-500
+                                            ${
+                                              emailSent
+                                                ? "bg-green-500 hover:bg-green-600"
+                                                : emailError
+                                                  ? "bg-red-500 hover:bg-red-600"
+                                                  : "bg-indigo-500 hover:bg-indigo-600"
+                                            }`}
                     aria-label="Submit Request"
                   >
                     {!emailSent ? (
@@ -202,10 +197,10 @@ const HireMeModal = ({ onClose }) => {
                 type="button"
                 role="button"
                 className="px-4
-            									sm:px-6
-            									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
-            									rounded-md
-            									focus:ring-1 focus:ring-indigo-900 duration-500"
+                                                sm:px-6
+                                                py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
+                                                rounded-md
+                                                focus:ring-1 focus:ring-indigo-900 duration-500"
                 aria-label="Close Modal"
                 tabIndex={0}
               >
@@ -221,6 +216,10 @@ const HireMeModal = ({ onClose }) => {
       </main>
     </motion.div>
   );
+};
+
+HireMeModal.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };
 
 export default HireMeModal;
